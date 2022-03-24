@@ -1,0 +1,34 @@
+@mixin flex($align-items, $just-cont) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $just-cont;
+}
+
+@mixin linkStyle($tex-dec, $font-size, $line-height, $color) {
+  text-decoration: $tex-dec;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin list-nostyle() {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin triangle-down-left($size, $color) {
+  width: 0;
+  height: 0;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-top: $size solid $color;
+}
+
+@mixin triangle-down-right($size, $color) {
+  width: 0;
+  height: 0;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-top: $size solid $color;
+}
